@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yashu Contact</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="yash.css" />
+
+    <style>
+      body {
+        color: #131212;
+        height: 100vh;
+        background: url("home.jpg") no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+      }
+      @media only screen and (max-width: 412px) {
+      body {
+        color: #0b0b0b;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url("home2.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+      }
+    }
+      .contact {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        scale: 1.2;
+      }
+      .contact-content {
+        position: relative;
+      }
+      .contact h1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #052a0b;
+        animation: showRight 1s ease forwards;
+        animation-delay: 0.3s;
+      }
+      .contact h3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #159f37;
+        animation: showRight 1s ease forwards;
+        animation-delay: 0.3s;
+      }
+
+      .navbar a.active {
+        color: #16ba42;
+      }
+      .contact-content {
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        height: 200px;
+      }
+      .form-elements {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .message-txtbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      input {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid #16cc4a;
+        border-radius: 8px;
+        color: #084017;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      .btn-box {
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+      }
+      .btn-box a {
+        cursor: pointer;
+      }
+      textarea {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 100px;
+        background: transparent;
+        border: 2px solid #139e42;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+      ::placeholder {
+        color: #0cd445;
+        justify-content: space-around;
+        padding-left: 10px;
+      }
+      input:focus,
+      textarea:focus {
+        color: #0cd445;
+      }
+      textarea {
+        color: #11d13a;
+      }
+      button {
+        background: transparent;
+        border: none;
+      }
+      .contact-inputs {
+        color: rgb(15, 16, 15);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">yashu</a>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="website.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="experience.html">Experience</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <h1>Wanna Contact <strong style="color: #32ef2c">Me </strong></h1>
+      <br />
+      <br />
+
+      <h3 class="contact-content">
+        <div class="form-container">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="post"
+            class="form-elements"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="0ef3e965-6cf5-4201-9bda-bbf2aa38214d"
+            />
+            <div class="form-title">
+              <h4>
+                Get In Touch
+                <hr />
+              </h4>
+            </div>
+            <div class="input-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                class="contact-inputs"
+                requrired
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email or Phn No."
+                class="contact-inputs"
+                requrired
+              />
+            </div>
+            <div class="message-txtbox">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                class="contact-inputs"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-box">
+              <a>SUBMIT <i class="bx bx-right-arrow-alt"></i> </a>
+            </button>
+          </form>
+        </div>
+      </h3>
+    </section>
+    <br />
+    <br /><br />
+    <div class="home-sci">
+      <a href="https://www.linkedin.com/in/yasaswini-syamala-522850258>
+        <i class="bx bxl-linkedin-square"></i>
+      </a></div>
+      <a href="https://github.com/yashureddy18"><i class="bx bxl-github"></i></a>
+      <a href="mailto:yasaswini_syamala@srmap.edu.in"
+        ><i class="bx bxl-gmail"></i
+      ></a>
+    </div>
+  </body>
+</html>
